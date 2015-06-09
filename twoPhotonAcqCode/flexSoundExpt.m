@@ -6,8 +6,12 @@ runTwoPhotonExpt('test',1)
 
 %% Pip 
 stim = PipStimulus;
-getRoiNum; 
-acquireTwoPhotonTrial(stim); 
+for i = 1:5
+    if i ==1 
+        getRoiNum; 
+    end
+    acquireTwoPhotonTrial(stim); 
+end
 
 %% Chirp 
 stim = Chirp;
